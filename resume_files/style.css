@@ -2,7 +2,7 @@ body { margin: 0;
        padding: 0;
        background-color: #fff;
        font-size: 12px;
-       font-family: sans-serif !important;
+       font-family: lato, sans-serif !important;
        -webkit-font-smoothing: subpixel-antialiased;
 }
 * { box-sizing: border-box;
@@ -53,6 +53,9 @@ a:hover {
                color: #555;
                font-size: 7pt;
 }
+.emph{
+  font-size: 14px;;
+}
 .key:first-child::before { content: '' }
 .section { border-bottom: 1px solid #ddd;
            padding: 10px 0 15px;
@@ -79,7 +82,7 @@ ul{
 }
 ul li {
   list-style: disc;
-  /* line-height: 24px; */
+  line-height: 20px;
   margin-bottom: 10px;
 }
 
