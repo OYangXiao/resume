@@ -400,12 +400,14 @@
               <li>
                 During the refactoring of legacy projects, I noticed that many business modules were used across
                 different pages. However, solutions like microfrontends felt too heavy for our needs. To address this, I
-                created a module sharing mechanism built on top of our existing bundler. It compile React components
-                into UMD or ES module JavaScript files, making them accessible to pages built
-                with any tech stack — even the oldest, most legacy pages.
-                This approach significantly improved code reuse and maintainability. The mechanism is also ES module
-                ready. Best of all, once a module is loaded, pages can use it just like a native module, with no
-                additional concepts to learn.
+                created a module-sharing mechanism built on top of our bundler that compiles
+                React components into UMD or ES module JavaScript files. This makes it possible for pages using any tech
+                stack — even the oldest ones — to consume these modules.
+                Once loaded, the module can be used like a native module, with no additional concepts to learn. This
+                approach improved code reusability and maintainability, and is designed to align with ES module
+                standards.
+                The mechanism was highly praised by team members, especially by the promotion and information groups,
+                since their business logic is frequently embedded across multiple pages.
               </li>
             </ul>
           </li>
