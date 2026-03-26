@@ -383,19 +383,29 @@
             <br>
             <ul class="desc">
               <li>
-                Migrate ZhangLe web team to React 16, from jQuery and Vue2 codebase.
-                Unified tech stack for all ZhangLe apps, make it possible for standard UI components, linting rules, error monitoring.
+                When I first started managing the ZhangLe team, all projects were based on jQuery or Vue 2. Since we
+                were required to adopt a set of in-house tools to unify the tech stack, I spent over two years leading
+                the team in migrating to React 16.
+                During that time, we held numerous meetings to share knowledge on React best practices and discuss how
+                to refactor legacy project logic.
+                In the end, we successfully migrated several critical pages, such as account management, fund purchase,
+                IPO subscription, and stock information. Since then, all new projects have been built with React.
               </li>
               <li>
-                An all-in-one project bundler for Zhangle web app, Based on Rspack.
-                Support project initialization, building, linting, third-party lib management.
-                Simplified the development process, embedding standard config for all projects, reduces fragmentation of codebase and improved the code quality.
+                An all-in-one project build tool for the ZhangLe web team, built on Rspack.
+                It supports project initialization, building, linting, and third-party library management. By embedding
+                standard configurations and best practices across all projects, it simplifies the development process,
+                reduces codebase fragmentation, and improves overall code quality.
               </li>
               <li>
-                A module sharing mechanism, based on the bundler, with a load helper.
-                Allow React Component being compiled to umd or es module js file, make it possible for pages with any tech stack to use it. Even the most aged pages can use it.
-                Improved the code reuse and maintainability.
-                Ready for es module standard.
+                During the refactoring of legacy projects, I noticed that many business modules were used across
+                different pages. However, solutions like microfrontends felt too heavy for our needs. To address this, I
+                created a module sharing mechanism built on top of our existing bundler. It compile React components
+                into UMD or ES module JavaScript files, making them accessible to pages built
+                with any tech stack — even the oldest, most legacy pages.
+                This approach significantly improved code reuse and maintainability. The mechanism is also ES module
+                ready. Best of all, once a module is loaded, pages can use it just like a native module, with no
+                additional concepts to learn.
               </li>
             </ul>
           </li>
